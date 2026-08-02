@@ -11,6 +11,7 @@ iframe,
 h1,
 h2,
 h3,
+h32,
 h4,
 h5,
 h6,
@@ -302,6 +303,7 @@ p {
 h1,
 h2,
 h3,
+h32,
 h4,
 h5,
 h6 {
@@ -317,6 +319,7 @@ h6 {
 h1 a,
 h2 a,
 h3 a,
+h32 a,
 h4 a,
 h5 a,
 h6 a {
@@ -330,6 +333,11 @@ h2 {
 
 h3 {
 	font-size: .9em
+}
+
+h32 {
+	font-size: .9em;
+	color: #2ebaae
 }
 
 h4 {
@@ -1919,6 +1927,10 @@ hr.major {
 	font-size: .7em
 }
 
+.blurb h32 {
+	font-size: .7em
+}
+
 .blurb p {
 	font-size: .9em
 }
@@ -2682,6 +2694,11 @@ ul.posts article header h3 {
 	margin-top: .125em
 }
 
+ul.posts article header h32 {
+	font-size: .7em;
+	margin-top: .125em
+}
+
 ul.posts article header .published {
 	display: block;
 	font-family: "Raleway", Helvetica, sans-serif;
@@ -2701,6 +2718,10 @@ ul.posts article header>:last-child {
 }
 
 #sidebar ul.posts article header h3 {
+	margin-top: 0
+}
+
+#sidebar ul.posts article header h32 {
 	margin-top: 0
 }
 
@@ -2749,6 +2770,10 @@ ul.posts article header>:last-child {
 }
 
 .mini-post header h3 {
+	font-size: .7em
+}
+
+.mini-post header h32 {
 	font-size: .7em
 }
 
@@ -3117,6 +3142,15 @@ ul.posts article header>:last-child {
 }
 
 .post.title-card>header .title h3 {
+	margin: 0;
+	font-size: 1em;
+	font-weight: 700;
+	line-height: 1;
+	letter-spacing: .18em;
+	text-align: left
+}
+
+.post.title-card>header .title h32 {
 	margin: 0;
 	font-size: 1em;
 	font-weight: 700;
@@ -3685,6 +3719,14 @@ body.single #footer {
 	font-size: .7em
 }
 
+#menu .links>li a h32 {
+	-moz-transition: color .2s ease;
+	-webkit-transition: color .2s ease;
+	-ms-transition: color .2s ease;
+	transition: color .2s ease;
+	font-size: .7em
+}
+
 #menu .links>li a p {
 	font-family: "Raleway", Helvetica, sans-serif;
 	font-size: .6em;
@@ -3696,6 +3738,10 @@ body.single #footer {
 }
 
 #menu .links>li a:hover h3 {
+	color: #2ebaae
+}
+
+#menu .links>li a:hover h32 {
 	color: #2ebaae
 }
 
@@ -3746,6 +3792,11 @@ body.is-menu-visible #menu {
 
 /* Keep title text left aligned inside each box */
 .alpha-grid .post.title-card > header .title h3{
+  text-align: left;
+}
+
+/* Keep title text left aligned inside each box */
+.alpha-grid .post.title-card > header .title h32{
   text-align: left;
 }
 
